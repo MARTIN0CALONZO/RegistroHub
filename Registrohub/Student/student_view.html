@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="../portal.css">
+    <script src="../theme.js"></script>
+</head>
+
+<body>
+
+    <div class="admin-shell">
+
+        <aside class="admin-sidebar">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <span class="brand-mark">R</span>
+                    <span class="brand-text" >RegistroHub<small>STUDENT</small></span>
+                </div>
+                <div class="sidebar-top-actions">
+                    <button id="theme-toggle-btn" class="theme-toggle theme-toggle-on-panel"></button>
+                    <button id="sidebar-toggle-btn" class="theme-toggle theme-toggle-on-panel sidebar-toggle-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <span class="badge">STUDENT PORTAL</span>
+
+            <nav class="admin-menu">
+                <span class="menu-label">Menu</span>
+                <a href="#" class="menu-item active">Dashboard</a>
+                
+            </nav>
+
+            <button id="logout-btn" class="btn btn-ghost btn-block">Log Out</button>
+        </aside>
+
+        <main class="admin-main">
+
+            <div class="admin-topline">
+                <div>
+                    <span class="eyebrow">Student Dashboard</span>
+                    <h1 id = "heading-name">Loading.....</h1>
+                    <p>You are successfully registered!</p>
+                </div>
+
+                <div class="stamp">
+                    <span class="stamp-main">VERIFIED</span>
+                    <span class="stamp-sub">STUDENT</span>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-label">Program</span>
+                    <div class="stat-value" id = "course-title">Loading.....</div>
+                    <span class="stat-sub" id = "bachelor-title">Loading.....</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Year Level</span>
+                    <div class="stat-value" id = "year-level">Loading.....</div>
+                    <span class="stat-sub">A.Y. 2026 - 2027</span>
+                </div>
+            </div>
+
+            <div class="record-card">
+                <div class="record-card-head">
+                    <h2>My Record</h2>
+                    <span class="field-hint">ON FILE</span>
+                </div>
+
+                <div class="record-row">
+                    <span class="record-label">Full Name</span>
+                    <span class="record-value" id = "student-fullName">Loading.....</span>
+                </div>
+                <div class="record-row">
+                    <span class="record-label">Birthday</span>
+                    <span class="record-value" id = "studentBirthday">Loading.....</span>
+                </div>
+                <div class="record-row">
+                    <span class="record-label">Age</span>
+                    <span class="record-value" id = "studentAge">Loading.....</span>
+                </div>
+                <div class="record-row">
+                    <span class="record-label">Sex</span>
+                    <span class="record-value" id = "studentSex">Loading.....</span>
+                </div>
+                <div class="record-row">
+                    <span class="record-label">Email Address</span>
+                    <span class="record-value" id = "studentEmail">Loading.....</span>
+                </div>
+                <div class="record-row">
+                    <span class="record-label">Phone Number</span>
+                    <span class="record-value" id = "student-phoneNumber">Loading.....</span>
+                </div>
+                <div class="record-row">
+                    <span class="record-label">Address</span>
+                    <span class="record-value" id = "student-address">Loading.....</span>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="toast" class="toast">
+        <h3>Are you sure you want to logout?</h3>
+        <div class="toast-actions">
+            <button id="confirm-logout-btn" class="btn btn-primary">Logout</button>
+            <button id="cancel-btn" class="btn btn-ghost">Cancel</button>
+        </div>
+    </div>
+
+    <script src="student_view.js"></script>
+</body>
+
+</html>

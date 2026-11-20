@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+</head>
+
+<body>
+
+    <button id="theme-toggle-btn" class="theme-toggle theme-toggle-fixed" aria-label="Toggle theme"></button>
+
+    <div class="login-shell">
+
+        <section class="login-left">
+            <div class="login-left-top">
+                <div class="brand">
+                    <span class="brand-mark">R</span>
+                    <span class="brand-text">RegistroHub<small>STUDENT REGISTRATION SYSTEM</small></span>
+                </div>
+                <h1>Welcome aboard! <em>Let's get you started.</em></h1>
+                <p>From sign-up to your first day, we've made registration simple and stress-free.</p>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="stat-value">01</div>
+                    <div class="stat-label">REGISTER</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value">02</div>
+                    <div class="stat-label">SIGN IN</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value">03</div>
+                    <div class="stat-label">ENTER PORTAL</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-right">
+            <div class="card login-card">
+                <div class="login-card-head">
+                    <h2>Sign in to your account</h2>
+                    <p>Enter your username and password to continue.</p>
+                </div>
+
+                <form class="loginform">
+                    <div class="field">
+                        <label for="username_input">Username <span class="req">*</span></label>
+                        <input class="input" type="text" id="username_input" value="pollyne1" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="password_input">Password <span class="req">*</span></label>
+                        <div class="password-wrapper">
+                            <input class="input" type="password" id="password_input" value="Poll1yne12!"   placeholder="••••••••••••" required>
+                            <button type="button" id="toggle-password-btn" class="toggle-password-btn" aria-label="Show password">Show</button>
+                        </div>
+                    </div>
+
+                    <button type="button" id="login-btn" class="btn btn-primary btn-block">Sign In</button>
+                </form>
+
+                <div class="divider-note">OR</div>
+
+                <button type="button" id="reg-btn" class="btn btn-ghost btn-block">Register as Student</button>
+
+                <h3 class="login-feedback" id="login-feedback"></h3>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

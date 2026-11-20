@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+</head>
+
+<body>
+
+    <div class="register-shell">
+
+        <div class="register-topbar">
+            <div class="brand">
+                <span class="brand-mark">R</span>
+                <span class="brand-text">RegistroHub<small>STUDENT REGISTRATION SYSTEM</small></span>
+            </div>
+
+            <button id="theme-toggle-btn" class="theme-toggle theme-toggle-on-panel" aria-label="Toggle theme"></button>
+        </div>
+
+        <div class="register-wrap">
+
+            <div class="register-head">
+                <div class="stamp">
+                    <span class="stamp-main">NEW</span>
+                    <span class="stamp-sub">APPLICANT</span>
+                </div>
+                <div>
+                    <h1>Registration Form</h1>
+                    <p>Fill in every section below exactly as it appears on your official documents. Fields marked
+                        <span class="req">*</span> are required.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <form id="reg-form">
+
+                    <div class="form-section">
+                        <div class="section-head">
+                            <span class="section-letter">A.</span>
+                            <h3>Personal Information</h3>
+                        </div>
+
+                        <div class="field-row field-row-3">
+                            <div class="field">
+                                <label for="fname">First Name <span class="req">*</span></label>
+                                <input class="input" type="text" id="fname" value="Pollyne" placeholder="Juan" required>
+                            </div>
+                            <div class="field">
+                                <label for="mname">Middle Name <span class="req">*</span></label>
+                                <input class="input" type="text" value="Gonzales" id="mname" placeholder="Santos" required>
+                            </div>
+                            <div class="field">
+                                <label for="lname">Last Name <span class="req">*</span></label>
+                                <input class="input" type="text" id="lname" value="Bartolome" placeholder="Dela Cruz" required>
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="bdate">Birthday <span class="req">*</span></label>
+                                <input class="input" type="date" id="bdate" required>
+                            </div>
+                            <div class="field">
+                                <label for="sex">Sex <span class="req">*</span></label>
+                                <select class="input" id="sex" required>
+                                    <option value="">Select sex</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="address">Address <span class="req">*</span></label>
+                            <input class="input" type="text" id="address" value="#257 Sitio III San Jose, Paombong, Bulacan"
+                                placeholder="House No., Street, Barangay, City, Province" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="section-head">
+                            <span class="section-letter">B.</span>
+                            <h3>Academic Information</h3>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="course">Course / Program <span class="req">*</span></label>
+                                <select class="input" id="course" required>
+                                    <option value="">Select a program</option>
+                                    <option value="Bachelor of Science in Information Technology">BS Information
+                                        Technology</option>
+                                    <option value="Bachelor of Science in Medical Technology">BS Medical Technology
+                                    </option>
+                                    <option value="Bachelor of Science in Business Administration">BS Business
+                                        Administration</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="yrlvl">Year Level <span class="req">*</span></label>
+                                <select class="input" id="yrlvl" required>
+                                    <option value="">Select year level</option>
+                                    <option value="1st Year">1st Year</option>
+                                    <option value="2nd Year">2nd Year</option>
+                                    <option value="3rd Year">3rd Year</option>
+                                    <option value="4th Year">4th Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="section-head">
+                            <span class="section-letter">C.</span>
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="email">Email Address <span class="req">*</span></label>
+                                <input class="input" value="pollyanne@gmail.com" type="email" id="email" placeholder="juandelacruz@gmail.com"
+                                    required>
+                            </div>
+                            <div class="field">
+                                <label for="contact">Phone Number <span class="req">*</span></label>
+                                <input class="input" type="tel" id="contact" pattern="09[0-9]{9}"
+                                    placeholder="09XXXXXXXXX" value="09123456654" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="section-head">
+                            <span class="section-letter">D.</span>
+                            <h3>Account Credentials</h3>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="username">Username <span class="req">*</span></label>
+                                <input class="input" type="text" id="username" value="pollyne1" placeholder="Enter your username"
+                                    required>
+                                <p class="field-hint">4-20 characters, no spaces</p>
+                            </div>
+                            <div class="field">
+                                <label for="password">Password <span class="req">*</span></label>
+                                <input class="input" type="password" value="Pollyne12!" id="password" placeholder="••••••••••••" required>
+                                <p class="field-hint">8+ characters, one uppercase letter, one number, one symbol</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <p class="field-hint">By submitting, you confirm the details above are accurate and
+                            complete.</p>
+                        <div class="form-actions-buttons">
+                            <button type="button" id="back-to-login" class="btn btn-ghost">Cancel</button>
+                            <button type="submit" id="submit-registration" class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

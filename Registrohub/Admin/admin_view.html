@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="../portal.css">
+    <script src="../theme.js"></script>
+</head>
+
+<body>
+
+    <div class="admin-shell">
+
+        <aside class="admin-sidebar">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <span class="brand-mark">R</span>
+                    <span class="brand-text">RegistroHub<small>STUDENT</small></span>
+                </div>
+                <div class="sidebar-top-actions">
+                    <button id="theme-toggle-btn" class="theme-toggle theme-toggle-on-panel"></button>
+                    <button id="sidebar-toggle-btn" class="theme-toggle theme-toggle-on-panel sidebar-toggle-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <span class="badge">ADMINISTRATOR PORTAL</span>
+
+            <nav class="admin-menu">
+                <span class="menu-label">Menu</span>
+                
+                <a href="#" class="menu-item active">Registered Students</a>
+                
+            </nav>
+
+            <button id="logout-btn" class="btn btn-ghost btn-block">Log Out</button>
+        </aside>
+
+        <main class="admin-main">
+
+            <div class="admin-topline">
+                <div>
+                    <span class="eyebrow">Student Management</span>
+                    <h1>Registered Students</h1>
+                    <p>These are the students registered to the organization.</p>
+                </div>
+
+                <div class="stamp">
+                    <span class="stamp-main">REGISTRY</span>
+                    <span class="stamp-sub">OFFICE COPY</span>
+                </div>
+            </div>
+
+            <div class="toolbar">
+                <input id="search-input" class="input search-input" type="text" placeholder="Search by name, or email...">
+                <select id="program-filter" class="input">
+                    <option value="">All Programs</option>
+                    <option>Bachelor of Science in Information Technology</option>
+                    <option>Bachelor of Science in Medical Technology</option>
+                    <option>Bachelor of Science in Business Administration</option>
+                </select>
+                <select id="year-filter" class="input">
+                    <option value="">All Year Levels</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+            </div>
+
+            <div class="table-wrap">
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Birthday</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Address</th>
+                            <th>Course / Program</th>
+                            <th>Year Level</th>
+                            <th>Email Address</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students-tbody">
+                        <tr><td colspan="10">Loading records...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-row">
+                <span id="recordCount" class="field-hint">Showing 0 of 0 records</span>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="toast" class="toast">
+        <h3>Are you sure you want to logout?</h3>
+        <div class="toast-actions">
+            <button id="confirm-logout-btn" class="btn btn-primary">Logout</button>
+            <button id="cancel-btn" class="btn btn-ghost">Cancel</button>
+        </div>
+    </div>
+
+    <script src="admin_view.js"></script>
+</body>
+
+</html>
